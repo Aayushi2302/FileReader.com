@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    body{
+        font-family:  "Roboto", sans-serif;
+        background-color: #fefae0;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    h1{
+        padding: 10px;
+    }
+    #content{
+        padding: 10px;
+        background-color: #ccd5ae;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h1>The content of file is</h1>
+    <div id="content"></div>
+</body>
+<script>
+    let content = document.getElementById("content");
+    window.onload = function(){
+        content.innerHTML = window.name;
+    }
+</script>
+</html>

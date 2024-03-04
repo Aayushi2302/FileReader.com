@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Reader</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    body{
+        font-family:  "Roboto", sans-serif;
+        background-color: #fefae0;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    #header{
+        background-color: #ccd5ae;
+        color: #003049;
+        padding: 8px;
+        margin: 0px;
+        border-bottom: 1.6px dashed #003049;
+    }
+    #container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 60px;
+        text-align: center;
+    }
+    #containerHeader{
+        background-color: #ccd5ae;
+        color: #003049;
+        border: 1px solid #003049;
+        margin: 0px;
+        font-size: 25px;
+        padding: 5px;
+    }
+    #uploadFileContainer{
+        border: 1.6px dashed #003049 ;
+        border-top: none;
+        height: 500px;
+    }
+    input[type="file"]{
+        display: none;
+    }
+    #uploadBtn{
+        background-color: #003049;
+        color: white;
+        border-radius: 55px;
+        font-size: 16px;
+        display: inline-block;
+        margin: 35px;
+        padding: 12px 80px;
+        cursor: pointer
+    }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        color: #003049;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    #dropArea{
+        background-color: #faedcd;
+        height: 69.5%;
+    }
+    #dropArea p{
+        padding-top: 70px;
+    }
+    #dropArea img{
+        height: 150px;
+        width: 150px;
+    }
+    .fileContainer{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background-color: #ccd5ae;
+        border: 1px solid black;
+    }
+    .fileContainer p{
+        font-size: 18px;
+        padding: 8px;
+        width: 70%;
+    }
+    .viewContent{
+        height: 35px;
+        width: 150px;
+        background-color: #003049;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+        margin-right: 55px;
+        cursor: pointer;
+    }
+    .deleteFile{
+        height: 35px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .fileContainer button img{
+        height: 30px;
+        width: 30px;
+    }
+</style>
+<body>
+    <h1 id="header">FileReader.com</h1>
+    <div id="container">
+        <h1 id="containerHeader">Upload File</h1>
+        <div id="uploadFileContainer">
+            <label id="uploadBtn">
+                Choose File
+                <input type="file" multiple>
+            </label>
+            <p>OR</p>
+            <div id="dropArea">
+                <p>Drag and Drop Files</p>
+                <img src="https://imgs.search.brave.com/x2CKxgGvA7h-9VdY4k87dAQd6h5yz_saMaOXPV3y43g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yNzE2LzI3MTYw/NTQucG5n">
+            </div>
+        </div>
+    </div>
+    <div id="files"></div>
+</body>
+<script src="script.js"></script>
+</html>
